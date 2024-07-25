@@ -29,8 +29,9 @@ Ini adalah proyek website untuk sebuah club motor yang menawarkan fitur-fitur ut
 - Buka halaman login.
 - Masukkan username dan password yang terdaftar.
 - Klik tombol "Sign In".
-- Tambah Data Client ke sistem menggunakan akun terdaftar.
-- Akses halaman penambahan data client.
+
+# Tambah Data Client
+- Buka halaman client
 - Masukkan informasi client yang diperlukan.
 - Klik tombol "Tambah Data"
 - Selesai
