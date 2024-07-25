@@ -1,0 +1,177 @@
+/* Animasi slide-up untuk caption */
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Menambahkan animasi slide-up pada caption */
+.card {
+    animation: slideUp 1s ease-in-out;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.navbar-custom .navbar-brand img {
+    width: 100px;
+    height: 100px;
+}
+
+.topbar {
+    background-color: #444;
+    padding: 10px 20px;
+}
+
+.topbar .nav-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.topbar .nav-link:hover {
+    background-color: #555;
+}
+
+.main-container {
+    display: flex;
+    flex: 1;
+}
+
+.sidebar {
+    background-color: #f4f4f4;
+    padding: 20px;
+    width: 200px;
+    overflow-y: auto;
+}
+
+.main-content {
+    margin-top: 20px;
+}
+
+.content-box {
+    background: linear-gradient(135deg, #e2e2e2, #ffffff);
+    border: 1px solid #dcdcdc;
+    border-radius: .375rem;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.content-box:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.content-box h3 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.content-box p,
+.content-box ol {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.content-box ol {
+    padding-left: 20px;
+}
+
+.content-box li {
+    margin-bottom: 10px;
+}
+
+main p {
+    font-size: 20px;
+    margin-left: 20px;
+}
+main ol li {
+    margin-bottom:10px;
+    font-size: 20px;
+}
+
+
+.contact-text {
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.sidebar .list-group-item {
+    background-color: #f4f4f4;
+    border: none;
+}
+
+.sidebar .list-group-item a {
+    color: #333;
+    text-decoration: none;
+}
+
+.sidebar .list-group-item a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+main.contact .card {
+    background: linear-gradient(135deg, #ffcc00, #ff9900);
+    display:flexbox;
+    width: 50%;
+    border-radius: 10px;
+    padding: 10px;
+    justify-content: center; /* Memastikan elemen di tengah secara horizontal */
+    align-items: center; /* Memastikan elemen di tengah secara vertikal */
+    width: 50%;
+    padding: 10px;
+    box-shadow: 2px 2px 10px 3px rgba(170, 135, 69, 0.6);
+    margin: 0 auto; 
+}
+main.contact {
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+/* Gaya default untuk link di navbar */
+.navbar-nav .nav-link {
+    color: #ffffff; /* Warna teks default */
+}
+
+/* Gaya untuk link saat hover */
+.navbar-nav .nav-link:hover {
+    color: #fff; /* Warna teks saat hover */
+    background-color: #007bff; /* Warna latar belakang saat hover (biru) */
+}
+
+.card-img-top {
+    object-fit: cover;
+    /* Menjaga gambar tetap terpotong dengan baik */
+    width: 100%;
+    /* Membuat gambar memenuhi lebar card */
+    height: 400px;
+    /* Menetapkan tinggi tetap untuk gambar */
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    /* Menggeser kartu ke tengah */
+}
